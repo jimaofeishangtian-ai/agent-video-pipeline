@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "2.0",
+  "seedanceChoice": null,
+  "shots": [
+    {
+      "id": "shot-001",
+      "viewerJob": "",
+      "beatId": "",
+      "frameRange": {"from": 0, "duration": 150},
+      "sourceType": "seedance",
+      "option": "A-one-real-shot",
+      "subject": "",
+      "action": "",
+      "scene": "",
+      "lightingColor": "",
+      "camera": {"size": "", "angle": "", "lensFeel": "", "movement": ""},
+      "style": "",
+      "quality": "physically coherent, usable head and tail handles",
+      "negativeConstraints": [],
+      "referenceAssetIds": [],
+      "generationMode": "reference-guided",
+      "audioPolicy": "mute-generated-audio-under-a-roll",
+      "status": "planned",
+      "approvedAssetId": null,
+      "fallback": "hyperframes-remotion-simulation"
+    }
+  ]
+}

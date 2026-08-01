@@ -1,0 +1,15 @@
+请安装并验证这个视频工作流 Skill：
+https://github.com/jimaofeishangtian-ai/agent-video-pipeline
+
+要求：
+1. 下载最新 GitHub Release 中的 agent-video-pipeline ZIP。
+2. 核对 Release 公布的 SHA256。
+3. 解压并保留完整 agent-video-pipeline 文件夹，不能只复制 SKILL.md。
+4. 优先安装到当前 Agent 实际显示的自定义 Skills 根目录；若当前 Agent 没有原生 Skill 加载器，就放入项目工作区并完整读取 SKILL.md。
+5. 运行 scripts/diagnose_env.py --json。
+6. 使用 Skill 校验器或运行 scripts/init_workspace.py 与 scripts/validate_project.py 做冒烟测试。
+7. 汇报 Agent 类型、安装位置、可用/缺失/付费连接器和验证结果。
+8. 安装阶段不得生成 Seedance、渲染 Remotion 或导出 ChatCut 视频。
+
+安装完成后的调用：
+使用 $agent-video-pipeline 检查我的素材与环境，从第一个未完成 gate 开始，并停在第一个需要我批准的步骤。

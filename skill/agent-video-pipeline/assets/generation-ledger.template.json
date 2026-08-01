@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "2.0",
+  "modules": {
+    "chatcut": {"status": "planned", "executionPath": null, "evidence": []},
+    "hyperframes": {"status": "planned", "executionPath": null, "evidence": []},
+    "seedance": {"status": "planned", "executionPath": null, "provider": null, "model": null, "jobs": [], "evidence": []},
+    "remotion": {"status": "planned", "executionPath": null, "evidence": []}
+  }
+}

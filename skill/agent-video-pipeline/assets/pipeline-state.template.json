@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "2.0",
+  "projectId": "replace-me",
+  "activeGate": "G0",
+  "capabilities": {},
+  "environment": {},
+  "gates": {
+    "G0": {"name": "preflight", "status": "in_progress", "artifacts": [], "approvals": []},
+    "G1": {"name": "chatcut-a-roll-lock", "status": "pending", "artifacts": [], "approvals": []},
+    "G2": {"name": "hyperframes-direction", "status": "pending", "artifacts": [], "approvals": []},
+    "G3": {"name": "seedance-decision", "status": "pending", "artifacts": [], "approvals": []},
+    "G4": {"name": "remotion-review", "status": "pending", "artifacts": [], "approvals": []},
+    "G5": {"name": "intermediate-render", "status": "pending", "artifacts": [], "approvals": []},
+    "G6": {"name": "chatcut-final-conform", "status": "pending", "artifacts": [], "approvals": []},
+    "G7": {"name": "final-export", "status": "pending", "artifacts": [], "approvals": []}
+  },
+  "decisions": [],
+  "invalidations": [],
+  "updatedAt": null
+}

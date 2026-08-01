@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "2.0",
+  "fps": 30,
+  "rounding": "round-half-up",
+  "source": {"assetId": null, "path": null, "contentHash": null},
+  "proxy": {"path": null, "codec": "h264+aac", "shared": true},
+  "cleanDurationFrames": null,
+  "segments": [],
+  "beats": [],
+  "captionTimingSource": "chatcut-transcript"
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "四模块自动剪辑 V2"
+  short_description: "ChatCut 双进场、Seedance 选择门与跨 Agent 审片流水线"
+  default_prompt: "Use $agent-video-pipeline to inspect my footage, resume or build the editable workflow, and stop at the next required review or cost gate."
+
+policy:
+  allow_implicit_invocation: true

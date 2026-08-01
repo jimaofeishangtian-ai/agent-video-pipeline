@@ -1,0 +1,40 @@
+schema_version: "2.0"
+project_id: "replace-me"
+title: "Untitled video"
+run_shape: "talking-head-roundtrip"
+agent_adapter:
+  product: "unknown"
+  execution_mode: "capability-detected"
+goal: ""
+audience: ""
+platform: "douyin"
+format:
+  ratio: "9:16"
+  width: 1080
+  height: 1920
+  fps: 30
+  target_duration_seconds: null
+source_strategy:
+  a_roll: []
+  b_roll: []
+  script: null
+  shared_proxy: null
+content_contract:
+  keep_all_sentences: false
+  protected_sentences: []
+  glossary_file: "glossary.json"
+visual_direction:
+  reference_assets: []
+  selected_direction: null
+editing:
+  intensity: "conservative"
+  pause_policy: "compress-long-preserve-breath"
+generation:
+  seedance_choice: null
+  choices: ["A-one-real-shot", "B-two-real-shots", "free-fallback"]
+  approval_mode: "per-job"
+  budget_ceiling: null
+deliverable:
+  editable_timelines: true
+  final_export_after_approval: true
+assumptions: []

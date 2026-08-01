@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "2.0",
+  "terms": [
+    {"canonical": "HyperFrames", "aliases": ["hyper frames"]},
+    {"canonical": "ChatCut", "aliases": ["ChatCup", "chat cut"]},
+    {"canonical": "Seedance", "aliases": ["sea dance"]},
+    {"canonical": "Remotion", "aliases": ["re motion"]}
+  ],
+  "forbiddenSubstitutions": []
+}
