@@ -27,7 +27,7 @@ Do not force all four modules. Do not say “four modules completed” unless th
 1. **G0 — Preflight and capability contract.** Inspect media, agent capabilities, accounts, cost boundaries, disk, dependencies, glossary, ratio, and protected content. Create the project state and one shared browser-safe proxy if needed.
 2. **G1 — ChatCut ingest and A-roll lock.** Import/target the real source, transcribe, correct glossary terms, produce a pause/cut dry run, preserve protected sentences, apply the approved semantic edit, and write `timeline-manifest.json` plus `edit-lock.json`. Read `references/chatcut-stage.md`.
 3. **G2 — HyperFrames direction.** Use the locked transcript beats and timing to select a visual system, storyboard, safe zones, and layered seekable prototype. Read `references/hyperframes-stage.md`.
-4. **G3 — Seedance decision and shots.** Present option A, B, and the clearly labeled free fallback before any paid call. Generate one job at a time, review it, record cost/provenance, and mute generated audio under the A-roll. Read `references/seedance-stage.md`.
+4. **G3 — Seedance channel, model, and shots.** Present ChatCut-managed Seedance, direct Volcengine Ark, and no-Seedance fallback before any paid call. For a high-quality ChatCut final, explicitly request `model: "seedance2"` and `resolution: "1080p"`; never let the 720p default or `seedance2mini` pass as a high-quality final. Generate one job at a time, read back its real params, review it, record cost/provenance, and mute generated audio under the A-roll. Read `references/seedance-stage.md`.
 5. **G4 — Remotion parameterization.** Consume the canonical timeline, creative contract, and approved assets. Build separate Review/Final compositions with parameterized copy, color, layout, media, and rhythm. Read `references/remotion-stage.md`.
 6. **G5 — Intermediate render approval.** Ask before rendering any Remotion overlay/full-frame asset for ChatCut. A test render approval authorizes only the named test file.
 7. **G6 — ChatCut online conform and final assembly.** Refresh the real project, place approved B-roll/graphics, enable captions, check collisions and sync, and stop on the editable timeline for review.
@@ -51,7 +51,7 @@ Create at most one shared H.264/AAC proxy for browser review. Keep the original 
 ## Enforce decision and review gates
 
 - Before G1 editing, distinguish semantic invariants from delivery cleanup. “Keep every sentence” still permits only the explicitly approved pause/filler policy.
-- Before G3, show Seedance choices and current runtime cost/entitlement. Submit one paid job, wait, inspect, then continue.
+- Before G3, show Seedance execution channels and current runtime model/cost/entitlement. Do not request a raw API key in chat. Submit one paid job, read back the actual model/resolution/references, wait, inspect, then continue.
 - Before G4 approval, inspect hook, dense middle, every B-roll boundary, captions, and CTA at entrance/settled/exit frames.
 - Before G6 approval, check face/mouth/hands/product/caption safe zones and generated-audio muting.
 - Before G5 or G7 rendering, require explicit authorization. User approval and agent verification are separate facts.

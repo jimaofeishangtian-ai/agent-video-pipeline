@@ -9,7 +9,7 @@ Allowed gate states: `pending`, `in_progress`, `needs_user`, `approved`, `comple
 | G0 preflight | brief, workspace, source media | manifest, capability report, glossary, provenance ledger, optional shared proxy | install/auth/cost boundary |
 | G1 ChatCut lock | source/proxy, glossary, content invariants | ChatCut Script/timeline, `timeline-manifest.json`, `edit-lock.json` | spoken content and rhythm |
 | G2 HyperFrames | locked semantic beats and timing | `BRIEF.md`, `frame.md`, `STORYBOARD.md`, `creative-contract.json`, prototype URL | visual direction |
-| G3 Seedance | shot plan, visual anchors, chosen option | approved asset IDs and ledger entries, or explicit free fallback | option and per-job cost |
+| G3 Seedance | shot plan, visual anchors, chosen execution channel | approved asset IDs and parameter-verified ledger entries, or explicit no-Seedance fallback | channel, model/resolution, and per-job cost |
 | G4 Remotion | canonical timing, creative contract, approved assets | Review/Final, `motion-manifest.json`, Studio URL | motion/timing/placement |
 | G5 intermediate | approved Final composition | named overlay/full-frame assets | explicit intermediate render |
 | G6 ChatCut conform | all approved assets | editable final timeline and captions | timeline playback |
@@ -35,7 +35,7 @@ Each shot includes stable ID, viewer job, linked beat/frame range, source type, 
 
 ### `generation-ledger.json`
 
-Each module records `planned`, `running`, `generated`, `simulated`, `skipped`, `blocked`, or `failed`; execution path; provider/model; job/asset IDs; requested/actual duration; credit estimate/actual cost; verification evidence; and timestamp. A visual imitation is `simulated`, not `generated`.
+Each module records `planned`, `running`, `generated`, `simulated`, `skipped`, `blocked`, or `failed`; execution path; Seedance execution channel and auth method; provider/requested/resolved model; resolution/ratio/duration/reference IDs; job/output asset IDs; credit estimate/actual cost; verification evidence; and timestamp. A visual imitation is `simulated`, not `generated`. A high-quality ChatCut Seedance final requires explicit `seedance2` plus `1080p` evidence.
 
 ### `motion-manifest.json`
 

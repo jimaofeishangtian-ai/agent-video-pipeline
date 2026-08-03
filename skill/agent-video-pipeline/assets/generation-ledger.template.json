@@ -1,9 +1,20 @@
 {
-  "schemaVersion": "2.0",
+  "schemaVersion": "2.1",
   "modules": {
     "chatcut": {"status": "planned", "executionPath": null, "evidence": []},
     "hyperframes": {"status": "planned", "executionPath": null, "evidence": []},
-    "seedance": {"status": "planned", "executionPath": null, "provider": null, "model": null, "jobs": [], "evidence": []},
+    "seedance": {
+      "status": "planned",
+      "executionPath": null,
+      "executionChannel": null,
+      "provider": null,
+      "requestedModel": "seedance2",
+      "resolvedModel": null,
+      "requestedResolution": "1080p",
+      "auth": {"method": null, "configured": false, "secretRef": null},
+      "jobs": [],
+      "evidence": []
+    },
     "remotion": {"status": "planned", "executionPath": null, "evidence": []}
   }
 }

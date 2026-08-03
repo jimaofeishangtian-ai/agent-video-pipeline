@@ -70,6 +70,34 @@ def main() -> int:
         except (OSError, json.JSONDecodeError) as exc:
             errors.append(f"invalid {name}: {exc}")
 
+    ledger_path = root / "generation-ledger.json"
+    if ledger_path.exists():
+        try:
+            ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
+            seedance = ledger.get("modules", {}).get("seedance", {})
+            if seedance.get("status") == "generated":
+                for field in ("executionChannel", "provider", "resolvedModel", "requestedResolution"):
+                    if not seedance.get(field):
+                        errors.append(f"generated Seedance is missing {field}")
+                jobs = seedance.get("jobs")
+                if not isinstance(jobs, list) or not jobs:
+                    errors.append("generated Seedance has no verified jobs")
+                else:
+                    for index, job in enumerate(jobs):
+                        if not isinstance(job, dict):
+                            errors.append(f"Seedance job {index} is not an object")
+                            continue
+                        for field in ("jobId", "outputAssetId", "resolvedModel", "resolution", "ratio", "durationSeconds"):
+                            if not job.get(field):
+                                errors.append(f"Seedance job {index} is missing {field}")
+                        if job.get("qualityTier") == "high-quality-final":
+                            if job.get("resolution") != "1080p":
+                                errors.append(f"Seedance job {index} high-quality final is not 1080p")
+                            if job.get("resolvedModel") == "seedance2mini":
+                                errors.append(f"Seedance job {index} uses seedance2mini as a high-quality final")
+        except (OSError, json.JSONDecodeError):
+            pass
+
     for previous, current in zip(GATES, GATES[1:]):
         p_status = gates.get(previous, {}).get("status")
         c_status = gates.get(current, {}).get("status")

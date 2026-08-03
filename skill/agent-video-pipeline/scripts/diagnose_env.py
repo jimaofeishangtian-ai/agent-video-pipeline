@@ -54,6 +54,9 @@ def main() -> int:
             "trae": bool(os.environ.get("TRAE_PROJECT_ID") or os.environ.get("TRAE_WORKSPACE")),
             "workBuddy": bool(os.environ.get("WORKBUDDY_HOME")),
         },
+        "credentials": {
+            "arkApiKeyConfigured": bool(os.environ.get("ARK_API_KEY")),
+        },
         "projectFiles": {
             "packageJson": (project / "package.json").exists(),
             "hyperframesJson": (project / "hyperframes.json").exists(),

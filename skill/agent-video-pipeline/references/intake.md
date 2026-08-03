@@ -12,7 +12,7 @@ Resolve these fields:
 4. `content_lock`: supplied script, source transcript, outline, or agent-proposed structure.
 5. `visual_direction`: brand assets/reference, named direction, or permission to propose three directions.
 6. `editing_intensity`: conservative, standard, or aggressive speech cleanup.
-7. `generation_budget`: Seedance A, Seedance B, free fallback, or a separately authorized ceiling.
+7. `generation_budget`: ChatCut-managed Seedance, direct Ark Seedance, no-Seedance fallback, or a separately authorized ceiling.
 8. `deliverable`: editable timelines only, final video after approval, or both.
 
 ## Adaptive follow-ups
@@ -21,7 +21,7 @@ Resolve these fields:
 - If “cinematic” or a similar adjective is the only visual input, ask which emotional reading matters most: restrained/premium, intimate/documentary, tense/dramatic, energetic/commercial, or another named reference.
 - If multiple recurring characters/products appear, identify the exact approved anchor asset for each before Seedance.
 - If B-roll mode is unclear, ask whether it should replace A-roll full-screen or appear as PiP.
-- If user wants automatic execution, still pause at authentication, Seedance A/B choice and paid generation, intermediate render, and final export gates.
+- If user wants automatic execution, still pause at authentication, Seedance execution-channel/model/resolution choice and paid generation, intermediate render, and final export gates.
 
 ## Defaults that are safe to infer
 

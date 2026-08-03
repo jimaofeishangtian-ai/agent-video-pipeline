@@ -10,6 +10,8 @@ https://github.com/jimaofeishangtian-ai/agent-video-pipeline
 6. 使用 Skill 校验器或运行 scripts/init_workspace.py 与 scripts/validate_project.py 做冒烟测试。
 7. 汇报 Agent 类型、安装位置、可用/缺失/付费连接器和验证结果。
 8. 安装阶段不得生成 Seedance、渲染 Remotion 或导出 ChatCut 视频。
+9. 验证 Seedance 三条执行通道：ChatCut 托管、火山方舟直连、不调用 Seedance。ChatCut 托管不索要 API Key；方舟直连只检查 ARK_API_KEY 是否安全配置，严禁在聊天中回显密钥。
+10. 验证高质量最终镜头强制使用当前真实可用的 Seedance 完整模型与 1080p；不得让默认 720p、mini 模型或未暴露的模型版本冒充高质量调用。
 
 安装完成后的调用：
 使用 $agent-video-pipeline 检查我的素材与环境，从第一个未完成 gate 开始，并停在第一个需要我批准的步骤。

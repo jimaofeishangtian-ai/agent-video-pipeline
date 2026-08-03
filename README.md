@@ -5,7 +5,7 @@
 ```text
 ChatCut 口播锁定
 → HyperFrames 视觉方向
-→ Seedance A/B 方案选择与真实镜头生成
+→ Seedance 执行通道选择、1080p 模型锁与真实镜头生成
 → Remotion 参数化动效
 → ChatCut 字幕、多轨总装与最终时间轴
 ```
@@ -53,11 +53,11 @@ https://github.com/jimaofeishangtian-ai/agent-video-pipeline
 
 ## Seedance 选择门
 
-- A：生成一条 4–5 秒真实镜头，推荐用于最小范围验证。
-- B：生成两条镜头，第一条审片通过后才生成第二条。
-- 免费替代：不调用 Seedance，明确记录为 `simulated` 或 `skipped`。
+- A：通过 ChatCut 托管调用，使用 ChatCut 登录/积分；高质量最终镜头显式锁定 `seedance2 + 1080p`，不需要另发 API Key。
+- B：火山方舟直连；用户自行开通，并把 `ARK_API_KEY` 配置到 Secret Store 或本机环境变量，禁止粘贴到聊天或群消息。
+- C：不调用 Seedance；Agent 根据内容选 HyperFrames、Remotion 或两者组合，并明确记录为 `simulated` 或 `skipped`。
 
-Skill 本身不包含 ChatCut/Seedance 订阅或生成积分。Agent 必须在付费生成前显示当前账号的权限、预计消耗并等待用户批准。
+Skill 本身不包含 ChatCut/Seedance 订阅或生成积分。Agent 必须在付费生成前显示执行通道、精确模型、分辨率、参考素材、当前账号权限和预计消耗，生成后读回 job 参数并等待用户审片。当前连接器没有暴露的模型（例如 Seedance 2.5）不得编造调用。
 
 ## 仓库结构
 
@@ -97,6 +97,6 @@ GitHub 仓库源码把说明文件与 Skill 分开；Release ZIP 的顶层直接
 
 ## 版本
 
-当前稳定版：`v2.0.0`。参见 [CHANGELOG.md](CHANGELOG.md)。
+当前稳定版：`v2.1.0`。参见 [CHANGELOG.md](CHANGELOG.md)。
 
 本仓库公开可读，但未附带开源许可证。除非另有书面授权，保留全部权利。

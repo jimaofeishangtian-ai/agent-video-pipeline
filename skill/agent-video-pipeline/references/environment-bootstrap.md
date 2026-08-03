@@ -11,7 +11,7 @@ Run `python scripts/diagnose_env.py --json` from the skill directory. Check the 
 - HyperFrames CLI/project state
 - Remotion packages and Studio script
 - any native ChatCut connector/plugin registration and authentication
-- current Seedance entitlement and displayed credit estimate
+- current Seedance execution channel, exact callable model IDs, supported resolutions, entitlement, authentication state, and displayed credit estimate
 - free disk space and write access
 
 ## Installation policy
@@ -21,14 +21,14 @@ Run `python scripts/diagnose_env.py --json` from the skill directory. Check the 
 3. Present one install plan containing the exact packages, scope, estimated download/disk impact, and commands.
 4. Ask for confirmation before system-wide installs, PATH changes, authentication, or paid service activation. After approval, continue without repeatedly asking for each local package.
 5. Verify versions and run the smallest smoke test after installation.
-6. Never store tokens in tracked files. Use the host credential store, connector OAuth, or environment variables excluded from version control.
+6. Never store tokens in tracked files or request them in chat. Use the host credential store, connector OAuth, or environment variables excluded from version control. Report only whether `ARK_API_KEY` is configured; never echo its value.
 
 ## Expected local setup
 
 - HyperFrames: use the project-pinned CLI where available; for a new project, scaffold with the current official CLI and keep the pin reproducible. Before render-affecting work on an existing project, check whether the pinned CLI needs a verified upgrade.
 - Remotion: keep packages in the project `devDependencies`; provide `studio`, `lint`, and typecheck scripts. Do not render during setup.
 - ChatCut: inspect the current agent's actual tool registry. On Codex, `codex mcp get chatcut` may be used when available; on other agents use their documented connector registry. Authenticate with the supported flow. Do not invent or locally bootstrap an undocumented MCP server.
-- Seedance: treat it as a ChatCut paid generation capability. Verify entitlement at runtime. If unavailable, offer existing/stock footage or HyperFrames/Remotion motion graphics; do not claim another paid model is a free substitute.
+- Seedance: distinguish ChatCut-managed generation from direct Volcengine Ark. ChatCut-managed calls use ChatCut login/OAuth and credits, not a user-supplied API key. Direct Ark calls require the user to configure `ARK_API_KEY` securely and explicitly choose direct billing. Resolve exact model IDs at runtime. For a high-quality current ChatCut final, explicitly request `seedance2` at `1080p`; do not accept the default 720p or `seedance2mini` as equivalent. If unavailable, offer existing/stock footage or HyperFrames/Remotion graphics without claiming Seedance ran.
 
 ## Cross-platform strategy
 

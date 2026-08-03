@@ -22,10 +22,11 @@
 
 ## G3 Seedance
 
-- User selected A, B, or free fallback after current entitlement/cost disclosure.
-- Every real job has provider/model/job/asset/cost evidence.
-- Approved clips pass camera/light/composition/anatomy/handles review.
-- Free fallback is labeled simulated/skipped; generated audio policy is recorded.
+- User selected ChatCut-managed, Ark-direct, or no-Seedance after exact model/resolution/auth/cost disclosure.
+- Every real job has execution channel, provider, resolved model, resolution, ratio, duration, reference IDs, job ID, output asset ID, and cost evidence read back from the provider record.
+- A high-quality ChatCut final explicitly used `seedance2` and `1080p`; default 720p and `seedance2mini` fail this gate unless the user knowingly approved a draft/lower tier.
+- Approved clips pass actual-pixel-size, camera/light/composition/anatomy/action/physical-coherence/text-artifact/handles review.
+- No-Seedance fallback is labeled simulated/skipped; generated audio policy is recorded.
 
 ## G4 Remotion review
 

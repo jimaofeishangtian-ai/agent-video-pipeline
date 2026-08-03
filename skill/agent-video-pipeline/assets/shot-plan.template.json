@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "2.0",
+  "schemaVersion": "2.1",
   "seedanceChoice": null,
   "shots": [
     {
@@ -8,7 +8,14 @@
       "beatId": "",
       "frameRange": {"from": 0, "duration": 150},
       "sourceType": "seedance",
-      "option": "A-one-real-shot",
+      "option": "A-chatcut-seedance-high-quality",
+      "executionChannel": "chatcut-managed",
+      "provider": "chatcut",
+      "requestedModel": "seedance2",
+      "resolvedModel": null,
+      "resolution": "1080p",
+      "ratio": "9:16",
+      "durationSeconds": 5,
       "subject": "",
       "action": "",
       "scene": "",
@@ -21,6 +28,8 @@
       "generationMode": "reference-guided",
       "audioPolicy": "mute-generated-audio-under-a-roll",
       "status": "planned",
+      "jobId": null,
+      "outputAssetId": null,
       "approvedAssetId": null,
       "fallback": "hyperframes-remotion-simulation"
     }

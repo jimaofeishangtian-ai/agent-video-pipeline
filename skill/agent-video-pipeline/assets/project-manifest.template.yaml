@@ -1,4 +1,4 @@
-schema_version: "2.0"
+schema_version: "2.1"
 project_id: "replace-me"
 title: "Untitled video"
 run_shape: "talking-head-roundtrip"
@@ -31,7 +31,16 @@ editing:
   pause_policy: "compress-long-preserve-breath"
 generation:
   seedance_choice: null
-  choices: ["A-one-real-shot", "B-two-real-shots", "free-fallback"]
+  choices: ["A-chatcut-seedance-high-quality", "B-volcengine-ark-high-quality", "C-no-seedance"]
+  execution_channel: null
+  model_contract:
+    requested_model: "seedance2"
+    resolved_model: null
+    resolution: "1080p"
+    allow_mini_for_final: false
+  direct_api:
+    key_environment_variable: "ARK_API_KEY"
+    key_configured: false
   approval_mode: "per-job"
   budget_ceiling: null
 deliverable:

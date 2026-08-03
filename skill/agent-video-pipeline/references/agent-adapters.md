@@ -13,7 +13,7 @@ At G0 classify each capability:
 | HyperFrames | AVAILABLE / INSTALLABLE | Installed Skill plus project-pinned CLI |
 | Remotion | AVAILABLE / INSTALLABLE | Project-local npm packages and Studio |
 | ChatCut | AVAILABLE / MISSING / AUTH | Native connector/plugin and logged-in editor |
-| Seedance | AVAILABLE / PAID/AUTH / MISSING | Verified provider capability and current credits |
+| Seedance | AVAILABLE / PAID/AUTH / MISSING | Verified ChatCut-managed or Ark-direct channel, exact model/resolution, auth and credits |
 | Timeline review | AVAILABLE / LIMITED | Browser/GUI or a URL the user can open |
 
 Do not infer an integration from the agent name. Inspect exposed tools, project dependencies, executable paths, and authenticated app state.
@@ -33,7 +33,7 @@ If a stage cannot run:
 1. Mark the module `blocked` or `skipped`, never `complete`.
 2. Keep upstream work and create a concise handoff containing required input, expected output schema, exact next gate, and any account action the user must take.
 3. Do not replace Seedance with graphics and still call it Seedance. Record `simulated` with `provider: hyperframes-remotion`.
-4. Do not download unofficial binaries or ask for secrets in chat. Use official authentication and credential storage.
+4. Do not download unofficial binaries or ask for secrets in chat. ChatCut-managed Seedance uses ChatCut auth/credits. Direct Ark uses a user-configured `ARK_API_KEY` in the host secret store or environment; verify presence without echoing it.
 
 ## Portable workspace layout
 
