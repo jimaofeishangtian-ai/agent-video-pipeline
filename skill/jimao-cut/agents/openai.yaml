@@ -1,0 +1,4 @@
+interface:
+  display_name: "鸡毛飞剪 JiMaoCut"
+  short_description: "鸡毛飞上天专属的一站式智能剪辑与Remotion审片导演"
+  default_prompt: "使用 $jimao-cut 根据我的素材自动选择剪辑路线，先建立 Remotion Studio 主审片时间轴，最终确认后再渲染。"

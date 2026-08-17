@@ -1,17 +1,15 @@
-请安装并验证这个视频工作流 Skill：
+请安装并验证这个自动剪辑 Skill：
 https://github.com/jimaofeishangtian-ai/agent-video-pipeline
 
 要求：
-1. 下载最新 GitHub Release 中的 agent-video-pipeline ZIP。
-2. 核对 Release 公布的 SHA256。
-3. 解压并保留完整 agent-video-pipeline 文件夹，不能只复制 SKILL.md。
-4. 优先安装到当前 Agent 实际显示的自定义 Skills 根目录；若当前 Agent 没有原生 Skill 加载器，就放入项目工作区并完整读取 SKILL.md。
-5. 运行 scripts/diagnose_env.py --json。
-6. 使用 Skill 校验器或运行 scripts/init_workspace.py 与 scripts/validate_project.py 做冒烟测试。
-7. 汇报 Agent 类型、安装位置、可用/缺失/付费连接器和验证结果。
-8. 安装阶段不得生成 Seedance、渲染 Remotion 或导出 ChatCut 视频。
-9. 验证 Seedance 三条执行通道：ChatCut 托管、火山方舟直连、不调用 Seedance。ChatCut 托管不索要 API Key；方舟直连只检查 ARK_API_KEY 是否安全配置，严禁在聊天中回显密钥。
-10. 验证高质量最终镜头强制使用当前真实可用的 Seedance 完整模型与 1080p；不得让默认 720p、mini 模型或未暴露的模型版本冒充高质量调用。
+1. 使用仓库中的 skill/jimao-cut 完整文件夹，不能只复制 SKILL.md。
+2. 安装到当前宿主实际显示的自定义 Skills 根目录，并保留 agents、assets、references、scripts。
+3. Codex 优先使用 ~/.codex/skills/jimao-cut。
+4. WorkBuddy 优先使用 ~/.workbuddy/skills/jimao-cut；如果宿主使用其他目录，以实时能力清单为准。
+5. 运行 node scripts/inventory_capabilities.mjs，记录当前宿主可用与缺失的能力。
+6. 运行 node scripts/validate_edit_plan.mjs assets/edit-plan.example.json 做结构冒烟测试。
+7. 安装阶段只汇报安装位置、宿主类型与验证结果，不生成、渲染或导出视频。
+8. 正式任务默认只建立 Remotion Studio 主审片时间轴；未获得最终确认前不得渲染。
 
 安装完成后的调用：
-使用 $agent-video-pipeline 检查我的素材与环境，从第一个未完成 gate 开始，并停在第一个需要我批准的步骤。
+使用 $jimao-cut 根据我的输入自动选择剪辑流程，先完成一次合并式创意确认，然后建立 Remotion Studio 主审片时间轴。
