@@ -1,9 +1,9 @@
 ---
-name: creator-auto-edit
-description: Primary entry point for end-to-end self-media video editing from talking-head video, footage, transcript, script, PPT/PPTX, PDF deck, or presentation outline. Use when an agent should ask one consolidated creative intake, choose narration, re-author source material into a video story, select evidence-aware media, design shots, clean A-roll, and build captions, B-roll, motion, music, and SFX in one editable master review timeline. For fresh work, default timeline and render ownership to Remotion Studio, use remotion-semantic-effects-pro baseline pro-approved-2026-08-03-all-16-v3, and keep ChatCut, HyperFrames, video-shotcraft, presentation parsers, generators, and local tools as analysis, asset, shot-design, or approved intermediate providers. Compatible with Agent-Skills hosts including Codex and WorkBuddy. Also use for revisions. Stop at review unless the user explicitly approves final rendering or export.
+name: cutpilot
+description: CutPilot is the primary entry point for end-to-end self-media video editing from talking-head video, footage, transcript, script, PPT/PPTX, PDF deck, or presentation outline. Use when an agent should ask one consolidated creative intake, choose narration, re-author source material into a video story, select evidence-aware media, design shots, clean A-roll, and build captions, B-roll, motion, music, and SFX in one editable master review timeline. For fresh work, default timeline and render ownership to Remotion Studio, use remotion-semantic-effects-pro baseline pro-approved-2026-08-03-all-16-v3, and keep ChatCut, HyperFrames, video-shotcraft, presentation parsers, generators, and local tools as analysis, asset, shot-design, or approved intermediate providers. Compatible with Agent-Skills hosts including Codex and WorkBuddy. Also use for revisions. Stop at review unless the user explicitly approves final rendering or export.
 ---
 
-# Creator Auto Edit
+# CutPilot
 
 Produce a coherent, editable creator-video timeline from source material with minimal user intervention. Treat the shared semantic edit plan as the source of truth; let specialized tools own only the work they are best at. Keep the workflow host-neutral so the same skill can run in Codex, WorkBuddy, CodeBuddy, or another Agent-Skills-compatible host with capability fallbacks.
 
