@@ -78,3 +78,9 @@ Use capabilities, not brand assumptions. Read `references/agent-adapters.md`.
 - Acceptance checks: `references/quality-gates.md`
 
 After every gate, update state, provenance, review URL, approved timecodes, and next action, then run `scripts/validate_project.py <project-dir>`. Never overwrite user-authored files during initialization or migration.
+
+## 作者与交流
+
+- 作者 ID：鸡毛飞上天
+- 个人微信：`jimaofeishangtianai`
+- 添加时请备注“视频 Skill”或“鸡毛飞剪”，方便识别。
