@@ -149,3 +149,9 @@ Maintain these portable artifacts when the engine permits:
 - the editable engine project and review entry
 
 The first delivery is the reviewed timeline plus verification notes, not a final media file.
+
+## 作者与交流
+
+- 作者 ID：鸡毛飞上天
+- 个人微信：`jimaofeishangtianai`
+- 添加时请备注“视频 Skill”或“鸡毛飞剪”，方便识别。
