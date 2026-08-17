@@ -2,14 +2,14 @@
 https://github.com/jimaofeishangtian-ai/agent-video-pipeline
 
 要求：
-1. 使用仓库中的 skill/cutpilot 完整文件夹，不能只复制 SKILL.md。
+1. 使用仓库中的 skill/jimao-cut 完整文件夹，不能只复制 SKILL.md。
 2. 安装到当前宿主实际显示的自定义 Skills 根目录，并保留 agents、assets、references、scripts。
-3. Codex 优先使用 ~/.codex/skills/cutpilot。
-4. WorkBuddy 优先使用 ~/.workbuddy/skills/cutpilot；如果宿主使用其他目录，以实时能力清单为准。
+3. Codex 优先使用 ~/.codex/skills/jimao-cut。
+4. WorkBuddy 优先使用 ~/.workbuddy/skills/jimao-cut；如果宿主使用其他目录，以实时能力清单为准。
 5. 运行 node scripts/inventory_capabilities.mjs，记录当前宿主可用与缺失的能力。
 6. 运行 node scripts/validate_edit_plan.mjs assets/edit-plan.example.json 做结构冒烟测试。
 7. 安装阶段只汇报安装位置、宿主类型与验证结果，不生成、渲染或导出视频。
 8. 正式任务默认只建立 Remotion Studio 主审片时间轴；未获得最终确认前不得渲染。
 
 安装完成后的调用：
-使用 $cutpilot 根据我的输入自动选择剪辑流程，先完成一次合并式创意确认，然后建立 Remotion Studio 主审片时间轴。
+使用 $jimao-cut 根据我的输入自动选择剪辑流程，先完成一次合并式创意确认，然后建立 Remotion Studio 主审片时间轴。

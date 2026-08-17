@@ -1,6 +1,6 @@
-# CutPilot / Agent Video Pipeline
+# 鸡毛飞剪 JiMaoCut / Agent Video Pipeline
 
-一套面向自媒体视频的自动剪辑 Skill。当前生产入口是 **CutPilot**，调用名为 `$cutpilot`：它可以从真人口播、素材、文案、PPT/PPTX、PDF 或混合输入开始，自动选择剪辑与动效路线，并把整条视频统一放到 Remotion Studio 主时间轴审片。
+一套面向自媒体视频的自动剪辑 Skill。当前生产入口是 **鸡毛飞剪 JiMaoCut**，调用名为 `$jimao-cut`：名字取自“鸡毛飞上天”，它可以从真人口播、素材、文案、PPT/PPTX、PDF 或混合输入开始，自动选择剪辑与动效路线，并把整条视频统一放到 Remotion Studio 主时间轴审片。
 
 旧版 `agent-video-pipeline` 仍保留在仓库中，供已有项目兼容使用。
 
@@ -9,7 +9,7 @@
 ```text
 素材 / 口播 / 文案 / PPT
         ↓
-CutPilot 统一理解、提问与语义规划
+鸡毛飞剪 JiMaoCut 统一理解、提问与语义规划
         ↓
 按内容自动选择能力
 ├─ 真人口播整理、转录、字幕、B-roll
@@ -38,23 +38,23 @@ Remotion Studio 唯一完整主审片时间轴
 
 ## 安装
 
-将完整的 `skill/cutpilot` 文件夹复制到宿主的自定义 Skills 根目录，不能只复制 `SKILL.md`。
+将完整的 `skill/jimao-cut` 文件夹复制到宿主的自定义 Skills 根目录，不能只复制 `SKILL.md`。
 
 常见目录：
 
 ```text
-Codex:      ~/.codex/skills/cutpilot
-WorkBuddy:  ~/.workbuddy/skills/cutpilot
-CodeBuddy:  ~/.codebuddy/skills/cutpilot
+Codex:      ~/.codex/skills/jimao-cut
+WorkBuddy:  ~/.workbuddy/skills/jimao-cut
+CodeBuddy:  ~/.codebuddy/skills/jimao-cut
 ```
 
 也可以把下面这段话连同仓库链接交给 Agent：
 
 ```text
-请从这个仓库安装并验证 CutPilot Skill：
+请从这个仓库安装并验证鸡毛飞剪 JiMaoCut Skill：
 https://github.com/jimaofeishangtian-ai/agent-video-pipeline
 
-完整复制 skill/cutpilot 文件夹到当前宿主实际使用的自定义 Skills 根目录，
+完整复制 skill/jimao-cut 文件夹到当前宿主实际使用的自定义 Skills 根目录，
 运行 scripts/inventory_capabilities.mjs，并用 assets/edit-plan.example.json
 执行 scripts/validate_edit_plan.mjs 冒烟测试。安装阶段不要生成或渲染视频。
 ```
@@ -62,7 +62,7 @@ https://github.com/jimaofeishangtian-ai/agent-video-pipeline
 ## 使用
 
 ```text
-使用 $cutpilot，根据我的素材自动选择合适流程，先给我一次合并式创意选项，
+使用 $jimao-cut，根据我的素材自动选择合适流程，先给我一次合并式创意选项，
 然后建立 Remotion Studio 主审片时间轴；没有最终确认前不要渲染。
 ```
 
@@ -72,7 +72,7 @@ https://github.com/jimaofeishangtian-ai/agent-video-pipeline
 
 ```text
 skill/
-├─ cutpilot/                # 当前生产入口
+├─ jimao-cut/               # 当前生产入口
 │  ├─ SKILL.md
 │  ├─ agents/
 │  ├─ assets/

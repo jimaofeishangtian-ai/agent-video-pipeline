@@ -4,9 +4,9 @@ This skill follows the portable Agent Skills layout: one `SKILL.md` plus relativ
 
 ## Discovery and installation
 
-- Codex user scope: `~/.codex/skills/cutpilot/`
-- WorkBuddy user scope: `~/.workbuddy/skills/cutpilot/`
-- CodeBuddy user scope: `~/.codebuddy/skills/cutpilot/`
+- Codex user scope: `~/.codex/skills/jimao-cut/`
+- WorkBuddy user scope: `~/.workbuddy/skills/jimao-cut/`
+- CodeBuddy user scope: `~/.codebuddy/skills/jimao-cut/`
 - Project scope: use the host's project-level skills directory when the user explicitly requests a project-only installation.
 
 Copy the complete directory; do not copy `SKILL.md` alone. A host may ignore `agents/openai.yaml`; this does not affect the workflow.

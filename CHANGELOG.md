@@ -2,7 +2,7 @@
 
 ## v3.0.0 - 2026-08-17
 
-- 新增 `cutpilot`（CutPilot）作为经过多轮实测、易于记忆的生产入口，旧版 `agent-video-pipeline` 保留兼容。
+- 新增 `jimao-cut`（鸡毛飞剪 JiMaoCut）作为经过多轮实测、与“鸡毛飞上天”ID关联的生产入口，旧版 `agent-video-pipeline` 保留兼容。
 - Remotion Studio 成为默认唯一完整主审片时间轴和最终渲染所有者。
 - 固定 Remotion Semantic Effects Pro 基线 `pro-approved-2026-08-03-all-16-v3`。
 - 增加一次合并式创意 intake，减少风格、旁白和细节的多轮追问。

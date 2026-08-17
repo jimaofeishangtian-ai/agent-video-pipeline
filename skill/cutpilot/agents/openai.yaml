@@ -1,4 +1,0 @@
-interface:
-  display_name: "CutPilot 自动剪辑导演"
-  short_description: "一键将口播、文案或PPT变成可审片的Remotion视频"
-  default_prompt: "使用 $cutpilot 根据我的素材自动选择剪辑路线，先建立 Remotion Studio 主审片时间轴，最终确认后再渲染。"
