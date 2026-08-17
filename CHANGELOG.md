@@ -1,5 +1,17 @@
 # Changelog
 
+## v3.0.0 - 2026-08-17
+
+- 新增 `creator-auto-edit` 作为经过多轮实测的生产入口，旧版 `agent-video-pipeline` 保留兼容。
+- Remotion Studio 成为默认唯一完整主审片时间轴和最终渲染所有者。
+- 固定 Remotion Semantic Effects Pro 基线 `pro-approved-2026-08-03-all-16-v3`。
+- 增加一次合并式创意 intake，减少风格、旁白和细节的多轮追问。
+- 增加真人口播、纯文案、PPT/PPTX/PDF 和混合输入的自动路由。
+- 增加 Video Shotcraft 镜头设计、HyperFrames 独立中间片段以及 Remotion 回装规则。
+- 增加个人剪辑偏好、PPT 视频化、纯文案成片、宿主兼容、语义中间表示和能力盘点说明。
+- 增加可移植的能力盘点与 `edit-plan.json` 校验脚本，支持 Codex、WorkBuddy 和 CodeBuddy。
+- 完成口播、PPT 和 Shotcraft 路线的前向验证；继续强制先审片、明确确认后再渲染。
+
 ## v2.1.0 - 2026-08-03
 
 - 将 Seedance 选择门改为 ChatCut 托管、火山方舟直连、不调用 Seedance 三条执行通道。

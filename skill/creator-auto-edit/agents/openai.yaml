@@ -1,0 +1,4 @@
+interface:
+  display_name: "自媒体自动剪辑导演"
+  short_description: "将口播、文案或PPT自动重构为单一Remotion审片时间轴"
+  default_prompt: "Use $creator-auto-edit to turn this talking-head video, script, or slide deck into one Remotion Studio master review timeline with a single consolidated creative intake and no final render before approval."

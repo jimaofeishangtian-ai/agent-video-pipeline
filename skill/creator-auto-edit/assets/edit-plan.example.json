@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0",
+  "project": {
+    "id": "creator-demo",
+    "title": "Creator Demo",
+    "status": "planning"
+  },
+  "ownership": {
+    "timelineOwner": "remotion",
+    "renderOwner": "remotion",
+    "overlayProviders": ["hyperframes"],
+    "analysisProviders": ["chatcut"],
+    "intermediateAssets": []
+  },
+  "brief": {
+    "sourceMode": "talking-head",
+    "purpose": "Explain an AI workflow",
+    "audience": "New creators",
+    "platform": "douyin",
+    "aspectRatio": "9:16",
+    "fps": 60,
+    "targetDurationSec": 45,
+    "language": "zh-CN"
+  },
+  "narration": {
+    "source": "source-audio",
+    "authorization": "user-provided",
+    "status": "locked"
+  },
+  "sources": [
+    {
+      "id": "a-roll-1",
+      "kind": "talking-head",
+      "pathOrUri": "media/talking-head.mp4",
+      "provenance": "user-provided"
+    }
+  ],
+  "designTokens": {
+    "tone": "clean-tech",
+    "primary": "#5B8CFF",
+    "accent": "#7CF5C5"
+  },
+  "beats": [
+    {
+      "id": "beat-001",
+      "startSec": 0,
+      "endSec": 3.2,
+      "sourceStartSec": 0.4,
+      "sourceEndSec": 3.6,
+      "spokenText": "你不需要先学会所有剪辑软件。",
+      "captionText": "你不需要先学会所有剪辑软件",
+      "summary": "降低自动剪辑使用门槛",
+      "purpose": "hook",
+      "relation": "none",
+      "role": "tech",
+      "visualType": "viewpoint",
+      "evidence": null,
+      "shot": {
+        "framing": "medium close-up",
+        "primaryMotion": "keyword lockup",
+        "recipe": "kinetic-keywords",
+        "enterSec": 0.35,
+        "exitSec": 2.9,
+        "holdSec": 1.7
+      },
+      "caption": {
+        "cueIds": ["cap-001"],
+        "zone": "bottom-safe",
+        "confidence": 0.99
+      },
+      "audio": {
+        "voiceAction": "keep",
+        "musicIntent": "low pulse",
+        "sfxEvent": "soft lock",
+        "ducking": true
+      },
+      "protectedRegions": ["face", "mouth", "caption"],
+      "review": {
+        "automaticChecks": [],
+        "humanStatus": "pending",
+        "notes": ""
+      }
+    }
+  ],
+  "tracks": ["a-roll", "captions", "motion", "music", "sfx"],
+  "review": {
+    "status": "not_started",
+    "criticalTimecodesSec": [0, 0.35, 2.9, 3.2]
+  },
+  "render": {
+    "authorized": false,
+    "preflight": {
+      "status": "not_run"
+    }
+  }
+}
